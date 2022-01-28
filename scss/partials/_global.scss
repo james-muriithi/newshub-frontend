@@ -1,5 +1,9 @@
 /* Global Styles */
 
+* {
+    font-family: $font-family;
+}
+
 body,
 html {
     font-family: $font-family;
@@ -7,10 +11,11 @@ html {
     height: 100%;
 }
 
+.navbar-toggler,
 .btn {
     &:active,
     &:focus {
-        box-shadow: none;
+        box-shadow: none !important;
     }
 }
 
