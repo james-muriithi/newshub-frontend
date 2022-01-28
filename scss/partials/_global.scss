@@ -4,6 +4,10 @@
     font-family: $font-family;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 body,
 html {
     font-family: $font-family;

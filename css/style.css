@@ -3,6 +3,9 @@
 * {
   font-family: Nunito, "serif"; }
 
+a {
+  text-decoration: none !important; }
+
 body,
 html {
   font-family: Nunito, "serif";
@@ -39,6 +42,42 @@ input:active, input:focus {
     font-weight: bold; }
 
 /* Banner Section */
+@media (min-width: 1200px) {
+  .w-xl-75, .banner .main-news .headline > div h1, .banner .main-news .headline > div .h1 {
+    width: 75% !important; } }
+
+.banner {
+  padding-top: 90px; }
+  .banner .main-news {
+    border-radius: 20px; }
+    .banner .main-news img {
+      border-radius: 20px;
+      height: 75vh;
+      position: relative;
+      z-index: 0;
+      width: 100%; }
+    .banner .main-news .headline {
+      border-radius: 20px;
+      z-index: 10;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.0028647) 53.15%, rgba(0, 0, 0, 0.2) 60.76%, rgba(0, 0, 0, 0.2) 75.84%, rgba(0, 0, 0, 0.2) 94.4%); }
+      .banner .main-news .headline > div {
+        bottom: 25px; }
+        .banner .main-news .headline > div .btn {
+          border-color: #fff; }
+  .banner .cols-6 {
+    height: calc(75vh / 2); }
+    .banner .cols-6 .news-image {
+      height: 70%;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 20px; }
+    @media (min-width: 992px) {
+      .banner .cols-6 {
+        max-width: 300px; } }
+  .banner .tags .tag {
+    font-size: 0.75rem; }
+
 /* Footer */
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
