@@ -1,6 +1,11 @@
 /* Navbar */
 
 .navbar {
+    .navbar-collapse {
+        position: relative;
+        z-index: 10;
+        background: $background-color;
+    }
     .nav-item {
         input {
             padding-right: 35px;
