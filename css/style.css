@@ -50,6 +50,38 @@ input:active, input:focus {
   min-height: 100%;
   padding-top: 90px;
   background: #f1f1f1; }
+  .banner .owl-carousel {
+    position: relative; }
+    .banner .owl-carousel .owl-nav {
+      position: absolute;
+      bottom: 45%;
+      width: 100%; }
+      .banner .owl-carousel .owl-nav .owl-next,
+      .banner .owl-carousel .owl-nav .owl-prev {
+        font-size: 4.5rem;
+        color: #fff; }
+        .banner .owl-carousel .owl-nav .owl-next.disabled,
+        .banner .owl-carousel .owl-nav .owl-prev.disabled {
+          color: #b3b3b3; }
+      .banner .owl-carousel .owl-nav .owl-next {
+        float: right; }
+    .banner .owl-carousel .owl-dots {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center; }
+      .banner .owl-carousel .owl-dots .owl-dot {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        background: #b3b3b3;
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+        border-radius: 50%; }
+        .banner .owl-carousel .owl-dots .owl-dot.active {
+          background: #fff; }
   .banner .main-news {
     border-radius: 20px; }
     .banner .main-news img {

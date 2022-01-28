@@ -11,6 +11,42 @@ $banner-height: 75vh;
     min-height: 100%;
     padding-top: 90px;
     background: $background-color;
+    .owl-carousel {
+        position: relative;
+        .owl-nav {
+            position: absolute;
+            bottom: 45%;
+            width: 100%;
+            .owl-next,
+            .owl-prev {
+                font-size: $spacer * 4.5;
+                color: $white;
+                &.disabled {
+                    color: darken($color: $white, $amount: 30);
+                }
+            }
+            .owl-next {
+                float: right;
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            .owl-dot {
+                @include transition;
+                background: darken($color: $white, $amount: 30);
+                width: 10px;
+                height: 10px;
+                margin-left: 10px;
+                border-radius: 50%;
+                &.active {
+                    background: $white;
+                }
+            }
+        }
+    }
     .main-news {
         border-radius: 20px;
         img {
@@ -19,9 +55,6 @@ $banner-height: 75vh;
             position: relative;
             z-index: 0;
             width: 100%;
-            // @include media-breakpoint-down(sm) {
-            //     height: 60vh;
-            // }
         }
         .headline {
             border-radius: 20px;
