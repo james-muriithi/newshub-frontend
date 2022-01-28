@@ -1,9 +1,5 @@
 /* Banner Section */
 
-// bootstrap variables and function
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
 .w-xl-75 {
     @include media-breakpoint-up(xl) {
         width: 75% !important;
@@ -12,7 +8,9 @@
 
 $banner-height: 75vh;
 .banner {
+    min-height: 100%;
     padding-top: 90px;
+    background: $background-color;
     .main-news {
         border-radius: 20px;
         img {

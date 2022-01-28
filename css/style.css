@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
 /* Global Styles */
 * {
   font-family: Nunito, "serif"; }
@@ -47,7 +47,9 @@ input:active, input:focus {
     width: 75% !important; } }
 
 .banner {
-  padding-top: 90px; }
+  min-height: 100%;
+  padding-top: 90px;
+  background: #f1f1f1; }
   .banner .main-news {
     border-radius: 20px; }
     .banner .main-news img {
@@ -77,6 +79,18 @@ input:active, input:focus {
         max-width: 300px; } }
   .banner .tags .tag {
     font-size: 0.75rem; }
+
+#top-news {
+  background: #f1f1f1; }
+  #top-news .news-card img {
+    border-radius: 10px 0 0 10px; }
+    @media (max-width: 575.98px) {
+      #top-news .news-card img {
+        border-radius: 10px 10px 0 0; } }
+  #top-news .news-card .links span {
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 300; }
 
 /* Footer */
 /*!
